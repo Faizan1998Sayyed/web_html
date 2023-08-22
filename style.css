@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-color: #02030C;
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+.first-div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: radial-gradient(42.63% 42.67% at 90% 4%, rgba(5, 93, 112, 0.90) 0%, rgba(6, 91, 115, 0.00) 233%);
+    text-align: center;
+  
+}
+.img-wrapper{
+    width: min(100% - 2rem,400px);
+    margin: auto;
+}
+.img{
+    width: 100%;
+    object-fit: cover;
+}
+.sec-div{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-image: radial-gradient(42.63% 42.67% at 0% 0%, rgba(5, 93, 112, 0.90) 0%, rgba(6, 91, 115, 0) 201%);
+    display: grid;
+}
+.inner-card{
+    padding: 5px;
+    margin: auto;
+    display: grid;
+    gap: 9px;
+    width: min(100% - 2rem, 500px);
+}
+.card-title{
+    text-align: start;
+    font-weight: 600;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: white;
+}
+.card-navi{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap:2%;
+} 
+.first-tab , .sec-tab , .third-tab ,.fourth-tab ,.fifth-tab , .sixth-tab{
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+}
+.active-tab{
+    background: rgba(66, 230, 233, 1)!important;
+}
+ .card-content{
+    font-family: "Poppins";
+    font-size: clamp(12px, 2.5vw, 15px);
+    color: white;
+    font-weight: 400;
+    display: none;
+}
+.card-btn-div{
+    margin-top: 17px;
+    display: grid;
+    gap: 10px;
+
+}
+
+.btn-div{
+    height: 40px;
+    width: min(100% - 2em ,259px);
+    margin: auto;
+}
+.first-btn{
+    background: none !important;
+    border: 1px solid rgba(51, 66, 89, 1) !important;
+    color: white !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.sec-btn{
+    background: rgba(236, 252, 253, 1) !important;
+    border: 1px solid rgba(51, 66, 89, 1) !important;
+    color: black !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+.third-btn{
+    background: none !important;
+    border: 1px solid rgba(51, 66, 89, 1) !important;
+    color: white !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.fourth-btn{
+    background: rgba(38, 209, 212, 1) !important;
+    border: 1px solid rgba(51, 66, 89, 1) !important;
+    color: black !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (width <= 600px){
+    .main-div{
+        grid-template-columns: 1fr;
+    }
+    .first-div{
+        background: radial-gradient(42.63% 42.67% at -42% 33%, rgba(5, 93, 112, 0.90) 59%, rgba(6, 91, 115, 0) 257%)
+    }
+    .first-div .img-wrapper{
+        width: min(100% - 2rem,300px);
+        margin-top: 42px;
+    }
+    .sec-div{
+        background-image: none;
+    }
+}
